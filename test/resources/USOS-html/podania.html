@@ -1,0 +1,522 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0099)https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/podania/listaZlozonych() -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>lista złożonych - podania - Wydzial MIM - Uniwersytet Warszawski - USOSweb</title>
+	
+	<meta name="Author" content="MIM UW, Zespół USOSweb">
+	<meta name="Copyright" content="MIM UW">
+	<link rel="stylesheet" href="https://usosweb.mimuw.edu.pl/img/dziekanat.css">
+		<link rel="SHORTCUT ICON" href="https://usosweb.mimuw.edu.pl/img/favicon.ico">
+	<script type="text/javascript" src="./podania_files/common.js"></script>
+		<link rel="stylesheet" href="https://usosweb.mimuw.edu.pl//css/ui/ui-lightness/jquery.css">
+	<script type="text/javascript" src="./podania_files/jquery.js"></script>
+	<script type="text/javascript">
+		jQuery.noConflict();
+		$$ = jQuery;
+	</script>
+	<script type="text/javascript" src="./podania_files/jquery-ui.js"></script>
+	<script type="text/javascript">
+		/* globals */
+		sys_www_path="https://usosweb.mimuw.edu.pl/";
+		lang="pl";
+		sys_debug=false;
+
+			
+	</script>
+<style type="text/css">.jlhlebbhengjlhmcjebbkambaekglhkf {top: 0px; left: 0px;min-width: 30px;max-width: 300px;font-size: 13px;font-family: arial, helvetica, sans-serif;opacity: .93;padding:0px;position:absolute;display:block;z-index: 999997;font-style: normal;font-variant: normal;font-weight: normal;}#jlhlebbhengjlhmcjebbkambaekglhkf_up{text-align: center;padding:0px;margin: 0px;}#jlhlebbhengjlhmcjebbkambaekglhkf_cont{background-color: #729FCF;font-family: arial, helvetica, sans-serif-webkit-box-shadow: #729FCF 0px 0px 2px;color: #FFFFFF;padding:7px;-webkit-border-radius: 5px;}#jlhlebbhengjlhmcjebbkambaekglhkf_down{text-align: center;padding:0px;margin: 0px;}</style></head>
+
+
+<body marginwidth="0" marginheight="0">
+<div style="margin-top: 0; padding: 0">
+					<!-- casMenu ver. 4.4 (AF+) -->
+		<style>
+			td.second a.casmenu, td.second a.casmenu:visited, td.second a.casmenu:active {
+				cursor: pointer;
+				color: #4e6b8c;
+				text-decoration: none;
+				border-bottom: 1px dotted #aaa
+			}
+			td.second a.casmenu:hover {
+				color: #000;
+				text-decoration: none;
+				border-bottom: 1px solid #f00;
+			}
+			td.first a.casmenu, td.first a.casmenu:visited, td.first a.casmenu:active {
+				cursor: pointer;
+				color: #888;
+				text-decoration: none;
+			}
+			td.first a.casmenu:hover {
+				color: #555;
+				text-decoration: none;
+			}
+			a.casMenu_hoverlined, a.casMenu_hoverlined:visited {
+				cursor: pointer;
+				text-decoration: none;
+			}
+			a.casMenu_hoverlined:hover {
+				text-decoration: underline;
+			}
+			b.casmenu {
+				color: #444;
+				font-weight: bold;
+			}
+			#casmenu td {
+				color: #888;
+				font-family: Tahoma;
+			}
+			#casMenu_servicelist_items a { color: #4E6B8C; text-decoration: none; }
+			#casMenu_servicelist_items a:hover { color: #000; text-decoration: underline; }
+		</style><div style="margin: 0; padding: 0; border: 0; width: 100%; height: 23px; background: url(&quot;https://usosweb.mimuw.edu.pl/img/casMenu/uw_bg.png&quot;); color: #888; font-family: Tahoma; font-size: 11px; font-weight: normal; text-decoration: none; text-align: left" id="casmenu"><table cellspacing="0" cellpadding="0" style="margin: 0; width: 100%"><tbody><tr><td style="white-space: nowrap; padding: 3px 0 0 30px; line-height: normal; text-align: left; vertical-align: middle; font-size: 11px" class="first"><div id="casMenu_servicelist_menu" style="display: none; position: absolute; left: 8px; top: 23px; width: 400px; background: #fff; padding: 0; margin: 0; border: 1px solid #aaa; border-top: 0; z-index: 99"><div style="background: #8c8c8c; color: #fff; padding: 1px 1px 4px 10px; font-size: 16px"><img src="./podania_files/uw_slx.gif" style="float: right; border: 1px solid #8c8c8c;" onclick="casMenu_servicelist_toggle()" onmouseover="this.style.borderColor=&quot;#aaa&quot;;" onmouseout="this.style.borderColor=&quot;#8c8c8c&quot;;"><span id="casMenu_servicelist_title">Czekaj...</span></div><div id="casMenu_servicelist_items" style="margin:0; padding: 5px 10px 5px 10px">Wczytywanie...</div></div><a href="https://logowanie.uw.edu.pl/info/pl/apps.html" class="casmenu">Serwisy internetowe Uniwersytetu Warszawskiego</a> <script type="text/javascript">
+			var casMenu_controllerUrl = "https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:common/uwCasMenuForward()&";
+			var casMenu_lang = "pl";
+			var casMenu_xml_threads = new Array();
+			var casMenu_xml_threads_running = 0;
+
+			function CasMenu_StartThreadXMLGET(url, callback)
+			{
+				casMenu_xml_threads_running++;
+				var index = casMenu_xml_threads.length;
+				casMenu_xml_threads[index] = 0;
+
+				var ie_callback = function (event)
+				{
+					if (casMenu_xml_threads[index].readyState?(casMenu_xml_threads[index].readyState!=4):(event.type!="load"))
+					{
+						return -1;
+					}
+					var response = casMenu_xml_threads[index];
+					var i;
+					if (callback != null) {
+						callback(casMenu_xml_threads[index]);
+					}
+				}
+
+				if (window.ActiveXObject)
+				{
+					casMenu_xml_threads[index] = new ActiveXObject("Microsoft.XMLDOM");
+					casMenu_xml_threads[index].onreadystatechange = ie_callback;
+					casMenu_xml_threads[index].load(url);
+				}
+				else if (typeof XMLHttpRequest != "undefined")
+				{
+					var httpRequest = new XMLHttpRequest();
+					if (httpRequest != null)
+					{
+						httpRequest.open("GET", url, true);
+						httpRequest.onreadystatechange = function ()
+						{
+							if(httpRequest.readyState == 4
+							&& httpRequest.status == 200)
+							{
+								if (callback != null)
+								{
+									callback(httpRequest.responseXML);
+								}
+							}
+						}
+						httpRequest.send(null);
+					}
+				} else {
+					// Przeglądarka nie obsługuje XML-DOM.
+					return -1;
+				}
+			}
+		</script><script type="text/javascript">
+			var casMenu_serviceListLoaded = false;
+			function CasMenu_GetServiceListCallback(response)
+			{
+				var value = response.getElementsByTagName("value")[0];
+				if (value && value.firstChild && value.firstChild.nodeValue != "") {
+					eval(value.firstChild.nodeValue);
+				} else {
+					casMenu_servicelist_toggle();
+					document.getElementById("casMenu_servicelist_button").style.display = "none";
+					alert("Wystąpił błąd w pobieraniu listy. Jeśli problem się będzie powtarzał\nproszę powiadomić administratora.");
+				}
+			}
+			function casMenu_servicelist_toggle()
+			{
+				var button = document.getElementById("casMenu_servicelist_button");
+				var menu = document.getElementById("casMenu_servicelist_menu");
+				if (menu.style.display == "none") {
+					if (!casMenu_serviceListLoaded)
+					{
+						CasMenu_StartThreadXMLGET("https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:common/uwCasMenuForward()&casMenu_action=GetLoadedVar&casMenu_varName=serviceListButtonClick_code", CasMenu_GetServiceListCallback);
+						casMenu_serviceListLoaded = true;
+					}
+					menu.style.display = "";
+					button.src = "https://usosweb.mimuw.edu.pl/img/casMenu/uw_slbtn1.gif";
+				} else {
+					menu.style.display = "none";
+					button.src = "https://usosweb.mimuw.edu.pl/img/casMenu/uw_slbtn0.gif";
+				}
+			}
+		</script><img id="casMenu_servicelist_button" onclick="casMenu_servicelist_toggle()" src="./podania_files/uw_slbtn0.gif" style="vertical-align: middle; padding-bottom: 3px; display: none;"><span id="casMenu_extra">&nbsp;| <a href="http://usosownia.uw.edu.pl/" class="casMenu_hoverlined" style="font-weight: bold; color:#080">USOSownia</a> - uniwersyteckie forum USOSowe</span><script type="text/javascript">
+					document.getElementById("casMenu_extra").innerHTML = "&nbsp;| <a href=\"http://usosownia.uw.edu.pl/\" class=\"casMenu_hoverlined\" style=\"font-weight: bold; color:#080\">USOSownia</a>" + ((window.innerWidth > 1100)?" - uniwersyteckie forum USOSowe":"");
+				</script></td><td style="white-space: nowrap; padding: 3px 6px 2px 6px; line-height: normal; text-align: right; vertical-align: middle; font-size: 11px" class="second"><img src="./podania_files/uw_kropki.gif" style="vertical-align: middle; margin-right: 8px">Zalogowany użytkownik: <b class="casmenu">Maciej Jaśkowski</b> | <a href="https://logowanie.uw.edu.pl/changepw?lang=pl&url=https%3A%2F%2Fusosweb.mimuw.edu.pl%2Fkontroler.php%3F_action%3Dactionx%3Adla_stud%2Fstudia%2Fpodania%2FlistaZlozonych%28%29" class="casmenu">zmień hasło</a> | <a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:logowaniecas/wyloguj()" class="casmenu">wyloguj się</a></td></tr></tbody></table></div>
+	</div>
+<div id="wrpopup"></div>
+
+
+
+<table id="naglowek" class="do_not_print" cellspacing="0" cellpadding="0">
+	<tbody><tr id="pasek1">
+		<td style="vertical-align:bottom;width:79px">
+			<a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:news/default()"><img alt="USOSweb" src="./podania_files/us.gif"></a>
+		</td>
+		<td style="text-align:right;vertical-align:top;padding:0;margin:0">
+			<table style="margin:0 0 0 auto;padding:0" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:0 0 0 0">
+																						<a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/rejestracja/koszyk()" class="koszyk">
+					<img alt="koszyk" src="./podania_files/koszyczek.gif">
+					<span style="vertical-align: 50%; margin: 0em 5em 0em 0em;">koszyk</span>
+					</a>
+													<a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx%3Adla_stud%2Fstudia%2Fpodania%2FlistaZlozonych%28%29&lang=2"><img alt="English" src="./podania_files/english2.gif" style="padding: 3px 0"></a>
+								&nbsp;&nbsp;&nbsp;
+			</td>
+			</tr></tbody></table>
+		</td>
+	</tr>
+	<tr id="pasek2">
+		<td style="text-align: right; vertical-align: top;">
+			<a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:news/default()"><img alt="USOSweb" src="./podania_files/web.gif"></a>
+		</td>
+		<td style="text-align: center; padding: 2px 10px 2px 10px" class="topmenu">
+			<a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:news/default()" onclick="return confirmWarnings();" class="">AKTUALNOŚCI</a> | <a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:katalog2/index()" onclick="return confirmWarnings();" class="">KATALOG</a> | <a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:home/index()" onclick="return confirmWarnings();" class="">MÓJ USOSWEB</a> | <a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/index()" onclick="return confirmWarnings();" class=" highlighted">DLA STUDENTÓW</a> | <a href="javascript:alert("Ta część serwisu jest dostępna tylko dla pracowników.")" class=" greyed">DLA PRACOWNIKÓW</a> | <a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dodatki/index()" onclick="return confirmWarnings();" class="">MODUŁY DODATKOWE</a>
+		</td>
+	</tr>
+</tbody></table>
+
+
+<table id="srodek" cellpadding="0" cellspacing="0"><tbody><tr>
+
+	<td id="belka" class="do_not_print">
+
+				<div class="wrleftmenu">
+		<div class="item level1"><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/index()" onclick="return confirmWarnings();" class="">WPROWADZENIE</a></div><div class="item level1"><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/rejestracja/kalendarz()" onclick="return confirmWarnings();" class="">REJESTRACJA</a></div><div class="subitems"><div class="item level2"><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/rejestracja/kalendarz()" onclick="return confirmWarnings();" class="">kalendarz</a></div><div class="item level2"><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/rejestracja/koszyk()" onclick="return confirmWarnings();" class="">koszyk</a></div><div class="item level2"><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/rejestracja/przedmioty()" onclick="return confirmWarnings();" class="">na przedmioty</a></div><div class="item level2"><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/rejestracja/egzaminy/wyborSesji()" onclick="return confirmWarnings();" class="">na egzaminy</a></div><div class="item level2"><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/rejestracja/brdg2/index()" onclick="return confirmWarnings();" class="">bezpośrednia do grup</a></div><div class="item level2"><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/rejestracja/rdg2/index()" onclick="return confirmWarnings();" class="">preferencje grup</a></div></div><div class="item level1"><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/index()" onclick="return confirmWarnings();" class="">MOJE STUDIA</a></div><div class="subitems"><div class="item level2"><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/index()" onclick="return confirmWarnings();" class="">wstęp</a></div><div class="item level2"><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/sprawdziany/index()" onclick="return confirmWarnings();" class="">sprawdziany</a></div><div class="item level2"><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/oceny/index()" onclick="return confirmWarnings();" class="">oceny</a></div><div class="item level2"><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/podpiecia/podpiecia()" onclick="return confirmWarnings();" class="">podpięcia</a></div><div class="item level2"><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/decyzje/index()" onclick="return confirmWarnings();" class="">decyzje</a></div><div class="item level2"><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/zaliczenia/index()" onclick="return confirmWarnings();" class="">zaliczenia etapów</a></div><div class="item level2"><a href="./podania_files/podania.html" onclick="return confirmWarnings();" class="">podania</a></div><div class="subitems"><div class="item level3"><a href="./podania_files/podania.html" onclick="return confirmWarnings();" class=" highlighted">lista złożonych</a></div><div class="item level3"><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/podania/wybierzProgram()" onclick="return confirmWarnings();" class="">złożenie nowego podania</a></div><div class="item level3"><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/podania/pomoc()" onclick="return confirmWarnings();" class="">pomoc</a></div></div><div class="item level2"><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/rankingi()" onclick="return confirmWarnings();" class="">rankingi</a></div><div class="item level2"><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/stypendia()" onclick="return confirmWarnings();" class="">stypendia</a></div><div class="item level2"><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/wymiana/intro()" onclick="return confirmWarnings();" class="">wymiana studencka</a></div><div class="item level2"><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/ankiety/index()" onclick="return confirmWarnings();" class="">ankiety</a></div><div class="item level2"><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/platnosci/index()" onclick="return confirmWarnings();" class="">płatności</a></div><div class="item level2"><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/dyplomy/index()" onclick="return confirmWarnings();" class="">dyplomy</a></div></div>
+		</div>
+	</td>
+
+	<td id="maintd">
+						<div id="maindiv">
+			<span id="jsdebug"></span>
+						<div class="wrtext">
+
+<div style="float:right"><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/podania/pomoc()#podania_programu" onclick="return confirmWarnings();"><img title="lista złożonych podań - pomoc" alt="lista złożonych podań - pomoc" src="./podania_files/pom.gif"></a></div>
+
+<h1>Podania</h1>
+
+<table class="nopaddingunder decori" cellspacing="0" style="border-bottom: 1px solid #d0cef9; margin: 0; "><tbody><tr><td style="background: #e3e1ff url(&quot;img/decor_info3.gif&quot;); background-repeat: no-repeat; width: 57px; height: 71px"></td><td rowspan="2" style="vertical-align: top"><table cellspacing="0"><tbody><tr><td style="height: 17px"></td></tr><tr><td style="border-top: 1px solid #d0cef9; border-right: 1px solid #d0cef9; "><table cellspacing="0" style="border: 1px solid #FFF"><tbody><tr><td><div style="height:57px"></div></td><td style="padding: 10px 15px 10px 15px; vertical-align: middle; background: #fff; font-family: Tahoma; font-size: 13px; color: #000"> 	<span style="white-space:nowrap"><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/podania/wybierzProgram()" onclick="return confirmWarnings();" class="wrgrey">kliknij tutaj, aby złożyć nowe podanie</a><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/podania/wybierzProgram()" onclick="return confirmWarnings();" class="wrgrey"><img src="./podania_files/more.gif" style="padding: 0 1px 0 3px;"></a></span> </td></tr></tbody></table></td></tr></tbody></table></td></tr><tr><td style="background: #e3e1ff; border-left: 1px solid #d0cef9; font-size:1px">&nbsp;</td></tr></tbody></table>
+<h2>Lista złożonych podań</h2>
+
+	<table class="wrnav" border="0" cellspacing="1px">
+				<tbody><tr><td colspan="5" class="wrnavbar"><table cellspacing="3" cellpadding="0" style="margin-right:30px"><tbody><tr><td><img src="./podania_files/nav_fst_d.gif" class="do_not_print"></td><td><img src="./podania_files/nav_bwd_d.gif" class="do_not_print"></td><td style="padding: 0 4px 0 4px"><nobr>Elementy <b>1..13</b> z 13</nobr></td><td><img src="./podania_files/nav_fwd_d.gif" class="do_not_print"></td><td><img src="./podania_files/nav_lst_d.gif" class="do_not_print"></td><td style="margin-left:3px"><nobr><input style="vertical-align: middle;" type="checkbox" class="checkbox" id="navoptcheckbox48339852" onclick="navoptclick(&quot;48339852&quot;);"><label style="cursor:default;font-size:80%;color:#600" for="navoptcheckbox48339852"> POKAŻ OPCJE</label></nobr></td><td></td></tr></tbody></table><table style="width:100%"><tbody><tr id="navopttr48339852" style="display:none"><td><div>Elementów na stronie: <a class="wrgrey" href="javascript:if(confirmWarnings()){document.location="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/podania/listaZlozonych(podania_offset:0;podania_limit:10;podania_order:8a)"}">10</a> .. <a class="wrgrey" href="javascript:if(confirmWarnings()){document.location="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/podania/listaZlozonych(podania_offset:0;podania_limit:30;podania_order:8a)"}">30</a> .. <a class="wrgrey" href="javascript:if(confirmWarnings()){document.location="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/podania/listaZlozonych(podania_offset:0;podania_limit:100;podania_order:8a)"}">100</a> .. <b>300</b> .. <a class="wrgrey" href="javascript:if(confirmWarnings()){document.location="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/podania/listaZlozonych(podania_offset:0;podania_limit:500;podania_order:8a)"}">500</a></div><hr><div><form name="order48339852"><table><tbody><tr><td>Sortuj wg&nbsp;</td><td><select name="select1" class="wrstd"><option value="_">(wybierz)</option><option value="6a">tematu (rosnąco)</option><option value="6d">tematu (malejąco)</option><option value="7a">daty rozpatrzenia (rosnąco)</option><option value="7d">daty rozpatrzenia (malejąco)</option><option value="8a" selected="">daty złożenia (rosnąco)</option><option value="8d">daty złożenia (malejąco)</option></select></td></tr><tr><td>następnie wg&nbsp;</td><td><select name="select2" class="wrstd"><option value="_" checked="">(wybierz)</option><option value="6a">tematu (rosnąco)</option><option value="6d">tematu (malejąco)</option><option value="7a">daty rozpatrzenia (rosnąco)</option><option value="7d">daty rozpatrzenia (malejąco)</option><option value="8a">daty złożenia (rosnąco)</option><option value="8d">daty złożenia (malejąco)</option></select></td></tr><tr><td>następnie wg&nbsp;</td><td><select name="select3" class="wrstd"><option value="_" checked="">(wybierz)</option><option value="6a">tematu (rosnąco)</option><option value="6d">tematu (malejąco)</option><option value="7a">daty rozpatrzenia (rosnąco)</option><option value="7d">daty rozpatrzenia (malejąco)</option><option value="8a">daty złożenia (rosnąco)</option><option value="8d">daty złożenia (malejąco)</option></select></td></tr></tbody></table><div style="margin-top: 3px"><input class="wrbtn" type="button" value="Sortuj" onclick="if(confirmWarnings())navbarorder(document.forms.order48339852,13,&quot;javascript:if(confirmWarnings()){document.location=&quot;https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/podania/listaZlozonych(podania_offset:0;podania_limit:300;podania_order:order_to_be_instered_here)&quot;}&quot;)"> <input class="wrbtn" type="button" value="Wyczyść" onclick="var tmp=document.forms.order48339852;tmp.select1.value = &quot;_&quot;;tmp.select2.value = &quot;_&quot;;tmp.select3.value = &quot;_&quot;;"> <input class="wrbtn" type="button" value="Wstaw wartości aktualne" onclick="document.forms.order48339852.reset()"> </div></form></div></td></tr></tbody></table></td></tr>
+		<tr>
+			<th class="wrnavbarheader">Program i etap studiów</th>
+			<th class="wrnavbarheader"><table cellspacing="0" cellpadding="0" style="display: inline"><tbody><tr><td><a onclick="" href="javascript:if(confirmWarnings()){document.location="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/podania/listaZlozonych(podania_offset:0;podania_limit:300;podania_order:6a8a)"}">Temat</a>&nbsp;</td><td><a href="javascript:if(confirmWarnings()){document.location="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/podania/listaZlozonych(podania_offset:0;podania_limit:300;podania_order:6a8a)"}" class="do_not_print"><img border="0" alt="nav_ordasc" src="./podania_files/nav_ordasc.gif" onmouseover="this.src=&quot;https://usosweb.mimuw.edu.pl/img/nav_ordasc_h.gif&quot;" onmouseout="this.src=&quot;https://usosweb.mimuw.edu.pl/img/nav_ordasc.gif&quot;"></a></td><td><a href="javascript:if(confirmWarnings()){document.location="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/podania/listaZlozonych(podania_offset:0;podania_limit:300;podania_order:6d8a)"}" class="do_not_print"><img border="0" alt="nav_orddesc" src="./podania_files/nav_orddesc.gif" onmouseover="this.src=&quot;https://usosweb.mimuw.edu.pl/img/nav_orddesc_h.gif&quot;" onmouseout="this.src=&quot;https://usosweb.mimuw.edu.pl/img/nav_orddesc.gif&quot;"></a></td></tr></tbody></table></th>
+			<th class="wrnavbarheader"><table cellspacing="0" cellpadding="0" style="display: inline"><tbody><tr><td><a onclick="" href="javascript:if(confirmWarnings()){document.location="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/podania/listaZlozonych(podania_offset:0;podania_limit:300;podania_order:8d)"}">Data złożenia</a>&nbsp;</td><td><span class="do_not_print"><img src="./podania_files/nav_ordasc_d.gif"></span></td><td><a href="javascript:if(confirmWarnings()){document.location="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/podania/listaZlozonych(podania_offset:0;podania_limit:300;podania_order:8d)"}" class="do_not_print"><img border="0" alt="nav_orddesc" src="./podania_files/nav_orddesc.gif" onmouseover="this.src=&quot;https://usosweb.mimuw.edu.pl/img/nav_orddesc_h.gif&quot;" onmouseout="this.src=&quot;https://usosweb.mimuw.edu.pl/img/nav_orddesc.gif&quot;"></a></td></tr></tbody></table></th>
+			<th class="wrnavbarheader"><table cellspacing="0" cellpadding="0" style="display: inline"><tbody><tr><td><a onclick="" href="javascript:if(confirmWarnings()){document.location="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/podania/listaZlozonych(podania_offset:0;podania_limit:300;podania_order:7a8a)"}">Data rozpatrzenia</a>&nbsp;</td><td><a href="javascript:if(confirmWarnings()){document.location="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/podania/listaZlozonych(podania_offset:0;podania_limit:300;podania_order:7a8a)"}" class="do_not_print"><img border="0" alt="nav_ordasc" src="./podania_files/nav_ordasc.gif" onmouseover="this.src=&quot;https://usosweb.mimuw.edu.pl/img/nav_ordasc_h.gif&quot;" onmouseout="this.src=&quot;https://usosweb.mimuw.edu.pl/img/nav_ordasc.gif&quot;"></a></td><td><a href="javascript:if(confirmWarnings()){document.location="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/podania/listaZlozonych(podania_offset:0;podania_limit:300;podania_order:7d8a)"}" class="do_not_print"><img border="0" alt="nav_orddesc" src="./podania_files/nav_orddesc.gif" onmouseover="this.src=&quot;https://usosweb.mimuw.edu.pl/img/nav_orddesc_h.gif&quot;" onmouseout="this.src=&quot;https://usosweb.mimuw.edu.pl/img/nav_orddesc.gif&quot;"></a></td></tr></tbody></table></th>
+			<th class="wrnavbarheader2">Opcje</th>
+		</tr>
+					<tr class="odd_row">
+				<td>
+					<span class="note">Jednoczesne Studia Informatyczno-Matematyczne, stacjonarne, jednolite magisterskie</span><br>
+					Trzeci rok JSIM 3M+4I/Rok akademicki 2006/07
+				</td>
+				<td class="strong" style="font-weight:bold;text-align:center">
+					Podanie o przyznanie urlopu dziekańskiego
+				</td>
+				<td nowrap="" style="text-align:center">2007-08-21 09:09</td>
+				<td style="text-align:center">
+											<b>2007-09-06 13:36</b><br>
+						<div style="margin-top: 4px; border: 1px dashed #666; padding:4px 6px; text-align:center">
+							<span class="note">
+								Odpowiedź dziekana:
+							</span><br>
+							Zgoda na urlop dziekański na III roku informatyki w 2007/8 (zgodnie z Pana dodatkowym, listownym wyjaśnieniem).
+						</div>
+									</td>
+				<td class="strong">
+					<span style="white-space:nowrap"><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/podania/podanie(_pod_id:1426;_inst_www_kod:MIMUW_WWW)" onclick="return confirmWarnings();">szczegóły</a><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/podania/podanie(_pod_id:1426;_inst_www_kod:MIMUW_WWW)" onclick="return confirmWarnings();"><img src="./podania_files/more.gif" style="padding: 0 1px 0 3px;"></a></span>				</td>
+			</tr>
+					<tr class="even_row">
+				<td>
+					<span class="note">Informatyka, stacjonarne, jednolite magisterskie</span><br>
+					Trzeci rok informatyki/Rok akademicki 2008/09
+				</td>
+				<td class="strong" style="font-weight:bold;text-align:center">
+					reyzgnacja z urlopu dziekanskiego
+				</td>
+				<td nowrap="" style="text-align:center">2008-09-17 12:28</td>
+				<td style="text-align:center">
+											<b>2008-09-23 20:44</b><br>
+						<div style="margin-top: 4px; border: 1px dashed #666; padding:4px 6px; text-align:center">
+							<span class="note">
+								Odpowiedź dziekana:
+							</span><br>
+							Zgoda
+						</div>
+									</td>
+				<td class="strong">
+					<span style="white-space:nowrap"><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/podania/podanie(_pod_id:3561;_inst_www_kod:MIMUW_WWW)" onclick="return confirmWarnings();">szczegóły</a><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/podania/podanie(_pod_id:3561;_inst_www_kod:MIMUW_WWW)" onclick="return confirmWarnings();"><img src="./podania_files/more.gif" style="padding: 0 1px 0 3px;"></a></span>				</td>
+			</tr>
+					<tr class="odd_row">
+				<td>
+					<span class="note">Matematyka, stacjonarne, jednolite magisterskie</span><br>
+					Piąty rok matematyki/Rok akademicki 2008/09
+				</td>
+				<td class="strong" style="font-weight:bold;text-align:center">
+					o przyznanie żetonów na Przedmioty Dające Uprawnienia Pedagogiczne
+				</td>
+				<td nowrap="" style="text-align:center">2008-09-19 09:48</td>
+				<td style="text-align:center">
+											<b>2008-09-23 20:44</b><br>
+						<div style="margin-top: 4px; border: 1px dashed #666; padding:4px 6px; text-align:center">
+							<span class="note">
+								Odpowiedź dziekana:
+							</span><br>
+							Zgoda
+						</div>
+									</td>
+				<td class="strong">
+					<span style="white-space:nowrap"><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/podania/podanie(_pod_id:3594;_inst_www_kod:MIMUW_WWW)" onclick="return confirmWarnings();">szczegóły</a><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/podania/podanie(_pod_id:3594;_inst_www_kod:MIMUW_WWW)" onclick="return confirmWarnings();"><img src="./podania_files/more.gif" style="padding: 0 1px 0 3px;"></a></span>				</td>
+			</tr>
+					<tr class="even_row">
+				<td>
+					<span class="note">Matematyka, stacjonarne, jednolite magisterskie</span><br>
+					Piąty rok matematyki/Rok akademicki 2008/09
+				</td>
+				<td class="strong" style="font-weight:bold;text-align:center">
+					Podanie o zwolnienie z obowiązku zaliczania przedmiotów
+				</td>
+				<td nowrap="" style="text-align:center">2008-10-10 08:40</td>
+				<td style="text-align:center">
+											<b>2008-10-10 19:09</b><br>
+						<div style="margin-top: 4px; border: 1px dashed #666; padding:4px 6px; text-align:center">
+							<span class="note">
+								Odpowiedź dziekana:
+							</span><br>
+							zgoda na wyrejestrowanie z podanych przedmiotów
+						</div>
+									</td>
+				<td class="strong">
+					<span style="white-space:nowrap"><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/podania/podanie(_pod_id:3968;_inst_www_kod:MIMUW_WWW)" onclick="return confirmWarnings();">szczegóły</a><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/podania/podanie(_pod_id:3968;_inst_www_kod:MIMUW_WWW)" onclick="return confirmWarnings();"><img src="./podania_files/more.gif" style="padding: 0 1px 0 3px;"></a></span>				</td>
+			</tr>
+					<tr class="odd_row">
+				<td>
+					<span class="note">Matematyka, stacjonarne, jednolite magisterskie</span><br>
+					Piąty rok matematyki/Rok akademicki 2008/09
+				</td>
+				<td class="strong" style="font-weight:bold;text-align:center">
+					Podanie o zwolnienie z obowiązku zaliczania przedmiotów
+				</td>
+				<td nowrap="" style="text-align:center">2008-10-10 12:39</td>
+				<td style="text-align:center">
+											<b>2008-10-24 19:22</b><br>
+						<div style="margin-top: 4px; border: 1px dashed #666; padding:4px 6px; text-align:center">
+							<span class="note">
+								Odpowiedź dziekana:
+							</span><br>
+							zgoda
+						</div>
+									</td>
+				<td class="strong">
+					<span style="white-space:nowrap"><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/podania/podanie(_pod_id:3998;_inst_www_kod:MIMUW_WWW)" onclick="return confirmWarnings();">szczegóły</a><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/podania/podanie(_pod_id:3998;_inst_www_kod:MIMUW_WWW)" onclick="return confirmWarnings();"><img src="./podania_files/more.gif" style="padding: 0 1px 0 3px;"></a></span>				</td>
+			</tr>
+					<tr class="even_row">
+				<td>
+					<span class="note">Informatyka, stacjonarne, jednolite magisterskie</span><br>
+					Trzeci rok informatyki/Rok akademicki 2008/09
+				</td>
+				<td class="strong" style="font-weight:bold;text-align:center">
+					Programowanie funkcyjne, laboratorium
+				</td>
+				<td nowrap="" style="text-align:center">2008-10-24 12:36</td>
+				<td style="text-align:center">
+											<b>2008-10-27 18:16</b><br>
+						<div style="margin-top: 4px; border: 1px dashed #666; padding:4px 6px; text-align:center">
+							<span class="note">
+								Odpowiedź dziekana:
+							</span><br>
+							zgoda
+						</div>
+									</td>
+				<td class="strong">
+					<span style="white-space:nowrap"><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/podania/podanie(_pod_id:4143;_inst_www_kod:MIMUW_WWW)" onclick="return confirmWarnings();">szczegóły</a><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/podania/podanie(_pod_id:4143;_inst_www_kod:MIMUW_WWW)" onclick="return confirmWarnings();"><img src="./podania_files/more.gif" style="padding: 0 1px 0 3px;"></a></span>				</td>
+			</tr>
+					<tr class="odd_row">
+				<td>
+					<span class="note">Informatyka, stacjonarne, jednolite magisterskie</span><br>
+					Trzeci rok informatyki/Rok akademicki 2008/09
+				</td>
+				<td class="strong" style="font-weight:bold;text-align:center">
+					Usprawiedliwienie nieobecności
+				</td>
+				<td nowrap="" style="text-align:center">2008-11-23 21:28</td>
+				<td style="text-align:center">
+											<b>2009-02-17 18:56</b><br>
+						<div style="margin-top: 4px; border: 1px dashed #666; padding:4px 6px; text-align:center">
+							<span class="note">
+								Odpowiedź dziekana:
+							</span><br>
+							podanie traktuję jako niebyłe - sprawa się zdezaktualizowała
+						</div>
+									</td>
+				<td class="strong">
+					<span style="white-space:nowrap"><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/podania/podanie(_pod_id:4360;_inst_www_kod:MIMUW_WWW)" onclick="return confirmWarnings();">szczegóły</a><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/podania/podanie(_pod_id:4360;_inst_www_kod:MIMUW_WWW)" onclick="return confirmWarnings();"><img src="./podania_files/more.gif" style="padding: 0 1px 0 3px;"></a></span>				</td>
+			</tr>
+					<tr class="even_row">
+				<td>
+					<span class="note">Informatyka, stacjonarne, jednolite magisterskie</span><br>
+					Trzeci rok informatyki/Rok akademicki 2008/09
+				</td>
+				<td class="strong" style="font-weight:bold;text-align:center">
+					Prośba o zmiany w rejestracji
+				</td>
+				<td nowrap="" style="text-align:center">2009-03-02 22:33</td>
+				<td style="text-align:center">
+											<b>2009-03-06 19:51</b><br>
+						<div style="margin-top: 4px; border: 1px dashed #666; padding:4px 6px; text-align:center">
+							<span class="note">
+								Odpowiedź dziekana:
+							</span><br>
+							Nie wyrażam zgody
+						</div>
+									</td>
+				<td class="strong">
+					<span style="white-space:nowrap"><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/podania/podanie(_pod_id:5385;_inst_www_kod:MIMUW_WWW)" onclick="return confirmWarnings();">szczegóły</a><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/podania/podanie(_pod_id:5385;_inst_www_kod:MIMUW_WWW)" onclick="return confirmWarnings();"><img src="./podania_files/more.gif" style="padding: 0 1px 0 3px;"></a></span>				</td>
+			</tr>
+					<tr class="odd_row">
+				<td>
+					<span class="note">Informatyka, stacjonarne, jednolite magisterskie</span><br>
+					Trzeci rok informatyki/Rok akademicki 2008/09
+				</td>
+				<td class="strong" style="font-weight:bold;text-align:center">
+					Podanie o zwolnienie z obowiązku zaliczania przedmiotów
+				</td>
+				<td nowrap="" style="text-align:center">2009-08-29 12:17</td>
+				<td style="text-align:center">
+											<b>2009-09-23 22:19</b><br>
+						<div style="margin-top: 4px; border: 1px dashed #666; padding:4px 6px; text-align:center">
+							<span class="note">
+								Odpowiedź dziekana:
+							</span><br>
+							Zgoda na zaliczenie przedmiotu monograficznego "Interefejsy"(1000-2M07IN) jako przedmiotu fakultatywnego
+						</div>
+									</td>
+				<td class="strong">
+					<span style="white-space:nowrap"><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/podania/podanie(_pod_id:7597;_inst_www_kod:MIMUW_WWW)" onclick="return confirmWarnings();">szczegóły</a><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/podania/podanie(_pod_id:7597;_inst_www_kod:MIMUW_WWW)" onclick="return confirmWarnings();"><img src="./podania_files/more.gif" style="padding: 0 1px 0 3px;"></a></span>				</td>
+			</tr>
+					<tr class="even_row">
+				<td>
+					<span class="note">Informatyka, stacjonarne, jednolite magisterskie</span><br>
+					Trzeci rok informatyki/Rok akademicki 2008/09
+				</td>
+				<td class="strong" style="font-weight:bold;text-align:center">
+					Podanie o zwolnienie z obowiązku zaliczania przedmiotów
+				</td>
+				<td nowrap="" style="text-align:center">2009-09-17 14:31</td>
+				<td style="text-align:center">
+											<b>2009-09-23 22:21</b><br>
+						<div style="margin-top: 4px; border: 1px dashed #666; padding:4px 6px; text-align:center">
+							<span class="note">
+								Odpowiedź dziekana:
+							</span><br>
+							Proszę o jednoznaczne sformułowanie podania
+						</div>
+									</td>
+				<td class="strong">
+					<span style="white-space:nowrap"><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/podania/podanie(_pod_id:8017;_inst_www_kod:MIMUW_WWW)" onclick="return confirmWarnings();">szczegóły</a><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/podania/podanie(_pod_id:8017;_inst_www_kod:MIMUW_WWW)" onclick="return confirmWarnings();"><img src="./podania_files/more.gif" style="padding: 0 1px 0 3px;"></a></span>				</td>
+			</tr>
+					<tr class="odd_row">
+				<td>
+					<span class="note">Informatyka, stacjonarne, jednolite magisterskie</span><br>
+					Czwarty rok informatyki/Rok akademicki 2009/10
+				</td>
+				<td class="strong" style="font-weight:bold;text-align:center">
+					Podanie o wyrejestrowanie z zajęć (par. 17 ust. 7 RS na UW)
+				</td>
+				<td nowrap="" style="text-align:center">2009-11-22 17:48</td>
+				<td style="text-align:center">
+											<b>2009-12-04 14:59</b><br>
+						<div style="margin-top: 4px; border: 1px dashed #666; padding:4px 6px; text-align:center">
+							<span class="note">
+								Odpowiedź dziekana:
+							</span><br>
+							zgoda
+						</div>
+									</td>
+				<td class="strong">
+					<span style="white-space:nowrap"><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/podania/podanie(_pod_id:10048;_inst_www_kod:MIMUW_WWW)" onclick="return confirmWarnings();">szczegóły</a><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/podania/podanie(_pod_id:10048;_inst_www_kod:MIMUW_WWW)" onclick="return confirmWarnings();"><img src="./podania_files/more.gif" style="padding: 0 1px 0 3px;"></a></span>				</td>
+			</tr>
+					<tr class="even_row">
+				<td>
+					<span class="note">Informatyka, stacjonarne, jednolite magisterskie</span><br>
+					Czwarty rok informatyki/Rok akademicki 2009/10
+				</td>
+				<td class="strong" style="font-weight:bold;text-align:center">
+					Podanie o przyznanie urlopu dziekańskiego
+				</td>
+				<td nowrap="" style="text-align:center">2010-05-10 20:18</td>
+				<td style="text-align:center">
+											<b>2010-05-11 17:16</b><br>
+						<div style="margin-top: 4px; border: 1px dashed #666; padding:4px 6px; text-align:center">
+							<span class="note">
+								Odpowiedź dziekana:
+							</span><br>
+							Zgoda na urlop na informatyce w roku 2009/10
+						</div>
+									</td>
+				<td class="strong">
+					<span style="white-space:nowrap"><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/podania/podanie(_pod_id:14771;_inst_www_kod:MIMUW_WWW)" onclick="return confirmWarnings();">szczegóły</a><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/podania/podanie(_pod_id:14771;_inst_www_kod:MIMUW_WWW)" onclick="return confirmWarnings();"><img src="./podania_files/more.gif" style="padding: 0 1px 0 3px;"></a></span>				</td>
+			</tr>
+					<tr class="odd_row">
+				<td>
+					<span class="note">Informatyka, stacjonarne, jednolite magisterskie</span><br>
+					Czwarty rok informatyki/Rok akademicki 2009/10
+				</td>
+				<td class="strong" style="font-weight:bold;text-align:center">
+					Prośba o zmiany w rejestracji
+				</td>
+				<td nowrap="" style="text-align:center">2010-05-21 17:36</td>
+				<td style="text-align:center">
+											<b>2010-05-24 16:41</b><br>
+						<div style="margin-top: 4px; border: 1px dashed #666; padding:4px 6px; text-align:center">
+							<span class="note">
+								Odpowiedź dziekana:
+							</span><br>
+							Zgoda
+						</div>
+									</td>
+				<td class="strong">
+					<span style="white-space:nowrap"><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/podania/podanie(_pod_id:15176;_inst_www_kod:MIMUW_WWW)" onclick="return confirmWarnings();">szczegóły</a><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:dla_stud/studia/podania/podanie(_pod_id:15176;_inst_www_kod:MIMUW_WWW)" onclick="return confirmWarnings();"><img src="./podania_files/more.gif" style="padding: 0 1px 0 3px;"></a></span>				</td>
+			</tr>
+			</tbody></table>
+
+</div>		</div>
+			</td>
+</tr>
+
+<tr class="do_not_print"><td colspan="2">
+	<table id="stopka" cellspacing="0" cellpadding="0">
+		<tbody><tr class="linia1"><td colspan="2"></td></tr>
+		<tr class="linia0"><td colspan="2"></td></tr>
+		<tr class="linia1"><td colspan="2"></td></tr>
+		<tr class="linia0"><td colspan="2"></td></tr>
+		<tr class="linia1"><td colspan="2"></td></tr>
+		<tr class="napisy">
+			<td style="white-space: nowrap">
+				USOSweb: Uniwersytecki System Obsługi Studiów
+			</td>
+			<td style="text-align: right; white-space: nowrap">
+				Najlepiej działa z przeglądarką
+				<a href="http://www.firefox.pl/"><img border="0" alt="Firefox" src="./podania_files/firefox.gif" style="vertical-align:middle;"></a>
+				::
+				USOSweb 5.1.10595M (2011-02-19)								::
+				<a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=actionx:news/kontakt()" onclick="return confirmWarnings();">kontakt</a>			</td>
+		</tr>
+		</tbody></table></td></tr>
+
+</tbody></table>
+
+</body></html>

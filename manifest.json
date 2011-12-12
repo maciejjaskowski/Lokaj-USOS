@@ -1,0 +1,42 @@
+{
+"content_scripts": [
+  {
+  "js": [ "lib/main/jquery.min.js", "main/model/lib.js", "main/view/checkButtonBuilder.js",
+          "main/utils/extractors.js",
+          "main/content-scripts/registration/coursePage.js",
+          "main/content-scripts/registration/courseGroupPage.js", 
+          "main/content-scripts/USOSRegistration.js" ],
+  "matches": [ "*://rejestracja.usos.uw.edu.pl/*"]
+  },
+  {
+    "js": [ "lib/main/jquery.min.js", 
+            "main/content-scripts/listAllPossibilities.js" ],
+    "matches": [ "*://rejestracja.usos.uw.edu.pl/*" ]
+  },
+  {
+    "js": [ "lib/main/jquery.min.js", "main/model/lib.js", "main/view/checkButtonBuilder.js", "main/content-scripts/refresher.js" ],
+    "matches": [ "*://usosweb.mimuw.edu.pl/*" ]
+  }
+],
+"description": "Chcesz mieć pewność, że zarejestrujesz się na wybrany OGUN lub WF? Lokaj USOS zarejestruje Cię automatycznie!",
+"name": "Lokaj USOS",
+"version": "1.2.1",
+"options_page": "main/view/popup.html",
+"background_page": "background.html",
+"browser_action": {
+  "default_icon": "images/icon.png",
+  "default_title": "Lokaj USOS",
+  "popup": "main/view/popup.html"
+},
+"icons": {
+  "16": "images/icon_16.png",
+  "128": "images/icon_128.png"
+},
+"permissions": [
+  "*://rejestracja.usos.uw.edu.pl/",
+  "https://logowanie.uw.edu.pl/*",
+  "*://usosweb.mimuw.edu.pl/*",
+  "notifications",
+  "*://*/*"
+]
+}

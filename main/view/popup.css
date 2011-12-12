@@ -1,0 +1,77 @@
+body{
+  font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+  font-size: 12px;
+  min-width: 700px;
+}         
+a{
+  color: #3B5998;
+}
+
+table{
+font-size: 8px;
+}
+
+table.statusy td {
+  min-width:5px;
+}
+
+#logowanie{
+  float:left;
+}
+
+
+
+#stan_logowania{
+  font-weight: bold;
+}
+
+#shortcutsLegend{
+float:right;
+}
+#shortcutsLegend td{
+font-size: 8px;
+padding:1px;
+}
+#shortcutsLegend td.left{
+text-align: left;
+padding-right: 15px;
+}
+#shortcutsLegend td.right{
+text-align: right;
+}
+#shortcutsLegend th{
+  font-size: 8px;
+  padding: 0px;
+  background-color: #FFFFFF;
+}
+#registrations{
+clear:both;
+}
+#refresher{
+clear:both;
+}
+#rejestracje{
+  clear:both;
+}
+#rejestracje tr{
+  font-size: 12px;
+}
+#rejestracje td{
+  background-color: #DDDDDD;
+  padding: 2px;
+}
+
+#autor{
+  font-size: 9px;
+padding: 3px;
+}
+#autor a{
+  color: #F95800;
+  text-decoration: none;
+}
+
+#facebook{
+padding: 8px;
+float:left;
+}
+

@@ -1,0 +1,27 @@
+opis dla dewelopera:
+
+1. modul zmieniajacy strony USOSa:
+manifest.json
+main/content-scripts/USOSRegistration.js
+
+Zadania:
+* wystwietlac w odpowiednich miejscach na wybranych stronach USOSa gwiazdki (puste, jesli USER nie chce sie na ten przedmiot zarejestrowac, pelna wpp.)
+* informacje o tym jaka gwiazdke pokazac pobiera od DAEMON (przy pomocy api chrome)
+* pobiera i parsuje dane z tej strony (nazwa przedmiotu, url do strony przedmiotu, ..., url do rejestracji)
+* w momencie klikniecia dane te sa przesylane do DAEMON (przy pomocy api chrome)
+
+2. daemon dzialajacy w tle:
+background.html
+bacground.js
+
+Zadania:
+* zbierac dane o przedmiotach, na ktore USER chce sie zarejestrowac, urlach (rowniez tych do rejestracji), zapuszczonych algorytmach rejestrujacych
+* dane te serializowac przy kazdej zmianie (uzywajac JSON.serialize, JSON.parse; wysokopoziomowo: rejestracja.save(), rejestracja.load())
+* udostepnia API pozwalajace na pobieranie tych danych oraz ich modyfikacje
+* zarzadza algorytmami rejestrujacymi
+
+3. popup/opcje 
+main/view/popup.html
+main/view/popup.js
+
+interfejs uzytkownika

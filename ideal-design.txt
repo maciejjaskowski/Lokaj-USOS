@@ -1,0 +1,92 @@
+
+class Storage - interfejs dostępu do bazy danych typu (klucz, wartość)
+Responsibilities:
+* komunikuje sie z baza danych
+* udostępnia proste API do wyciągania danych
+* udostępnia proste API do zapisywania danych
+
+class KnockingStorage -
+* używa Storage 
+Responsibilities:
+* udostępni API umożliwiające:
+- wyciągniecie danych dla KnockTriala
+- przeiterowanie po wszystkich KnockTrialach
+??
+
+class KnockTrial - encja przechowująca informacje o pukaniu
+* zna adres do pukania (address)
+* zna Knockera (knocker)
+* wie kiedy zacząć pukać (timeToStart)
+
+class Knocker - (pukacz) odpowiada za pukanie pod wybrany adres
+* synchroniczny!
+Responsibilities
+* pukacz dostaje adres do zapukania i zwraca wynik pukania (pozytywny lub negatywny)
+Knocker.knock(url)
+
+class Scheduler - odpowiada za wysyłanie powiadomień o tym, że nadszedł na coś czas.
+* używa spania, używa wielu wątków
+Responsibilities
+* zachowywanie wydarzeń typu: co n milisekund wykonuj callback, zaczynając od momentu t
+
+History h = Scheduler.getHistory(); //zwraca informacje o rejestracji wydarzen do wywolania, wywolanych wydarzeniach i ich wynikach;
+eventId = Scheduler.registerEvent(event); // rejestruje event
+Scheduler.unregisterEvent(eventId); // usuwa event 
+
+
+
+
+class Event - przechowuje informacje o evencie
+* tworzone tylko przez EventBuilder
+Immutable Fields:
+* timeToStart
+* interval
+* callback
+* onPositiveResult
+* onNegativeResult
+
+Event e = EventBuilder.at(t).withInterval(n).run(callback); //wywolanie wielokrotne co n milisekund az do zwrocenia true przez callback;
+EventBuilder.at(t).run(callback); //wywolanie jeden raz
+EventBuilder.withInterval(n).run(callback); //wywolanie natychmiastowe
+EventBuilder.run(callback); //wywolanie jednokrotne callback (natychmiastowe);
+
+
+event.onResultEqualTo("cosTam").do(resultCallback) 
+// wywołuje resultCallback, jeśli callback zwrócił "cosTam"
+// lub wyjątek jeśli event został już zarejestrowany w Schedulerze
+id = event.schedule() - rejestruje event w schedulerze
+
+
+
+class Main
+Responsibilities
+* rezurekcja:
+  - wczytuje KnockTriale do pukania z Storage
+  - ustawia wydarzenia Schedulera wedle zebranych KnockTriali
+      :: Event event = Scheduler.at(knockTrial.timeToStart).withInterval(1000).event(knockTrial.knocker.algorithm);
+      :: event.onResult().equalTo(true).do(ogłoś na rzecz interfejsu);
+      :: event.onResult().equalTo(false).do(ogłoś na rzecz interfejsu);
+      :: event.schedule();
+      
+
+class View
+* KnockerViewBuilder -- tworzy odpowiednia htmlke (sklada sie z innych builderow). 
+Co to dokladnie jest nie moze byc istotne. Powinno dac sie dodac do golego htmla (bez <table> itp)
+
+
+* KnockerView sklada sie z:
+-- InformationView (statyczne z dokładnością do licznika)
+-- TrialView (tu pojawiają się nowe statusy triali itp)
+   :: może to być po prostu licznik prób + informacja o powodzeniu, jeśli takie nastąpi.
+   :: 
+
+
+* KnockerViewAccessor
+-- get(knockerId).remove();
+-- knockTrialId = get(knockerId).addKnockTrial();
+-- TrialViewAccessor trial = get(knockerId).getTrialViewAccessor(trialId)
+
+* TrialViewAccessor
+-- trial.setFailure();
+-- trial.setSuccess();
+
